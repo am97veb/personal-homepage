@@ -12,8 +12,6 @@ html {
 body {
     background-color: ${({ theme }) => theme.colors.whiteLilac};
     font-family: "Inter";
-    max-width: 1920px;
-    font-size: 18px;
-    line-height: 25.2px;
+    word-break: break-word;  
 }
-`
+`;
