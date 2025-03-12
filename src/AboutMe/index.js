@@ -1,22 +1,20 @@
-import { Caption, Contact, ContactIcon, Description, Header, Image, ImageContainer, Mail, Wrapper } from "./styled";
+import { Caption, Contact, ContactIcon, Description, Mail, Title, Wrapper } from "./styled";
+import message from "./Message.svg";
+import { MailAdress } from "../MailAdress/Index";
+import image from "../Github_black.svg"
+import { aboutMeDescription } from "./aboutMeDescription";
 
-export const AboutMe = () => (
+
+export const AboutMe = ({ caption, title, description, mail }) => (
     <Wrapper>
-        <ImageContainer>
-            <Image src="./images/AdrianMarkefkaPhoto.jpg" alt="zdjęcie Adriana" />
-        </ImageContainer>
-
-        <div>
-            <Caption>this is</Caption>
-            <Header>Adrian Markefka</Header>
-            <Description>I'm Frontend Developer and I love new technology,
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus fugit placeat corrupti omnis. Fugit sapiente temporibus sint corporis, nam earum nostrum nihil possimus, illo vel odit vitae aut perferendis delectus?
-            </Description>
-            <Contact>
-                <ContactIcon src="./images/Message.svg" alt="ikona listu" />
-                <Mail href="mailto:am97veb@gmail.com">Hire Me</Mail>
-            </Contact>
-        </div>
+        <Caption>{caption}</Caption>
+        <Title>{title}</Title>
+        <Description>{description}
+        </Description>
+        <Contact>
+            <ContactIcon src={message} alt="ikona listu" />
+            {mail}
+        </Contact>
+        
     </Wrapper>
-
 );
