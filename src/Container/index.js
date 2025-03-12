@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-    max-width: 1920px;
+    max-width: 1216px;
+    padding-top: 5%;
     font-size: 18px;
-    line-height: 25.2px;
-    
-    
+    margin: 0 auto;
 `;
