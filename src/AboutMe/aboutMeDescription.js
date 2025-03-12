@@ -1,0 +1,1 @@
+export const aboutMeDescription = "I'm Frontend Developer and I love new technology. coś tu by trzeb jeszcze dopisać"
