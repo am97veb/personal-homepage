@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ReactComponent as IconSpinner } from "./svg/icon-spinner.svg";
 
 export const PortfolioSection = styled.section`
@@ -30,6 +30,7 @@ export const LeadParagraph = styled.p`
 export const Projects = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 32px;
 `;
 
 export const Project = styled.div`
@@ -64,8 +65,6 @@ export const LinkContainer = styled.div`
 export const Link = styled.a`
     color: ${({ theme }) => theme.colors.scienceBlue};
     text-decoration: none;
-    
-    /* border-bottom: 1px solid ${({theme}) => theme.colors.scienceBlue}; */
 `;
 
 export const Wrapper = styled.div`
@@ -85,8 +84,18 @@ export const LoadingInformation = styled.p`
 
 export const LoadingIcon = styled(IconSpinner)`
     margin-top: 16px;
-    transition: 5s;
-    transform: rotate(360deg);
+    animation-name: rotation;
+    animation-duration: 10s;
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0turn);
+        }
+        to {
+            transform: rotate(3turn);
+        }
+    }
  `;
+
 
 

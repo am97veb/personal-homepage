@@ -37,19 +37,19 @@ export const Portfolio = ({ title, gitHubButton, gitHubLink }) => {
                     )
                     :
                     (<Projects>
-                        { projects.map(project =>
-                                <Project>
-                                    <ProjectName>{project.name.replaceAll("-", " ")}</ProjectName>
-                                    <ProjectDescription>{project.description}</ProjectDescription>
-                                    <LinkContainer>
-                                        <span>Demo:</span>
-                                        <Link href={project.homepage}> {project.homepage}</Link>
-                                        <span>Code:</span>
-                                        <Link href={project.html_url}> {project.html_url}</Link>
-                                    </LinkContainer>
-                                </Project>
+                        {projects.map(project =>
+                            <Project>
+                                <ProjectName>{project.name.replaceAll("-", " ")}</ProjectName>
+                                <ProjectDescription>{project.description}</ProjectDescription>
+                                <LinkContainer>
+                                    <span>Demo:</span>
+                                    <Link href={project.homepage}> {project.homepage}</Link>
+                                    <span>Code:</span>
+                                    <Link href={project.html_url}> {project.html_url}</Link>
+                                </LinkContainer>
+                            </Project>
                         )}
-                        </Projects>
+                    </Projects>
                     )
             }
 
