@@ -3,7 +3,7 @@ import { ReactComponent as IconSpinner } from "./svg/icon-spinner.svg";
 
 export const PortfolioSection = styled.section`
     max-width: 1216px;
-    margin: 72px auto;
+    margin-bottom: 120px;
 `;
 
 export const Header = styled.div`
