@@ -41,6 +41,10 @@ export const Project = styled.div`
                 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     padding: 56px;
     line-height: 140%;    
+
+    &:hover {
+        border: 6px solid rgba(3, 102, 214, 0.2)
+    }
 `;
 
 export const ProjectName = styled.h3`
@@ -56,7 +60,7 @@ export const ProjectDescription = styled.p`
    margin: 24px 0;
 `;
 
-export const LinkContainer = styled.div`
+export const ProjectLinks = styled.div`
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 8px;
@@ -96,6 +100,3 @@ export const LoadingIcon = styled(IconSpinner)`
         }
     }
  `;
-
-
-
