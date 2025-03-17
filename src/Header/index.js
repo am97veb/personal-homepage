@@ -1,13 +1,27 @@
-import { Image, ImageContainer, Mail, Container, Wrapper } from "./styled";
+import { Wrapper, ImageContainer, Image, AboutMe, Caption, Title, Description, DarkTheme } from "./styled";
 import adrianMarkefka from "./AdrianMarkefka.jpg"
+import { LinkContainer } from "../LinkContainer";
 
-export const Header = ({content}) => (
+export const Header = ({ mail, toggleTheme }) => (
     <Wrapper>
         <ImageContainer>
-            <Image src={adrianMarkefka} alt="zdjęcie Adriana" />
+            <Image src={adrianMarkefka} alt="photo by Adrian" />
         </ImageContainer>
-
-        {content}
+        <AboutMe>
+            <Caption>
+                this is
+            </Caption>
+            <Title>
+                Adrian Markefka
+            </Title>
+            <Description>
+                "I'm Frontend Developer and I love new technology. coś tu by trzeb jeszcze dopisać"
+            </Description>
+            <LinkContainer>
+                {mail}
+            </LinkContainer>
+        </AboutMe>
+        {toggleTheme}
     </Wrapper>
 
 );
