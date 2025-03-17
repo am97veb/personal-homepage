@@ -4,7 +4,7 @@ import { ReactComponent as DangerIcon } from "./svg/danger.svg";
 import { useProjectsDownloads } from "./useProjectDownloads";
 import { LinkContainer } from "../LinkContainer";
 
-export const Portfolio = ({ title, gitHubLink }) => {
+export const Portfolio = ({ gitHubLink }) => {
   const dataState = useProjectsDownloads();
   const projects = dataState.projectsData;
 
@@ -12,14 +12,20 @@ export const Portfolio = ({ title, gitHubLink }) => {
     <PortfolioSection>
       <Header>
         <GitHubIcon />
-        <Title>{title}</Title>
-        <LeadParagraph>My recent projects</LeadParagraph>
+        <Title>
+          Portfolio
+        </Title>
+        <LeadParagraph>
+          My recent projects
+        </LeadParagraph>
       </Header>
       {dataState.status === "loading"
         ?
         (
           <Wrapper>
-            <LoadingInformation>Please wait, projects are being loaded...</LoadingInformation>
+            <LoadingInformation>
+              Please wait, projects are being loaded...
+            </LoadingInformation>
             <LoadingIcon />
           </ Wrapper>
         )
@@ -28,10 +34,14 @@ export const Portfolio = ({ title, gitHubLink }) => {
           (
             <Wrapper>
               <DangerIcon />
-              <ErrorHeader>Ooops! Something went wrong...</ErrorHeader>
-              <LoadingInformation>Sorry, failed to load Github projects.
+              <ErrorHeader>
+                Ooops! Something went wrong...
+              </ErrorHeader>
+              <LoadingInformation>
+                Sorry, failed to load Github projects.
                 <br />
-                You can check them directly on Github.</LoadingInformation>
+                You can check them directly on Github.
+              </LoadingInformation>
               <LinkContainer>
                 {gitHubLink}
               </LinkContainer>
@@ -42,13 +52,25 @@ export const Portfolio = ({ title, gitHubLink }) => {
             <Projects>
               {projects.map(project =>
                 <Project>
-                  <ProjectName>{project.name.replaceAll("-", " ")}</ProjectName>
-                  <ProjectDescription>{project.description}</ProjectDescription>
+                  <ProjectName>
+                    {project.name.replaceAll("-", " ")}
+                  </ProjectName>
+                  <ProjectDescription>
+                    {project.description}
+                  </ProjectDescription>
                   <ProjectLinks>
-                    <span>Demo:</span>
-                    <Link href={project.homepage}> {project.homepage}</Link>
-                    <span>Code:</span>
-                    <Link href={project.html_url}> {project.html_url}</Link>
+                    <span>
+                      Demo:
+                    </span>
+                    <Link href={project.homepage}>
+                      {project.homepage}
+                    </Link>
+                    <span>
+                      Code:
+                    </span>
+                    <Link href={project.html_url}>
+                      {project.html_url}
+                    </Link>
                   </ProjectLinks>
                 </Project>
               )}
