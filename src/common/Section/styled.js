@@ -10,11 +10,16 @@ export const StyledSection = styled.section`
 `;
 
 export const Header = styled.h2`
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 6px;
     padding-bottom: 13px ;
     border-bottom: 1px solid ${({ theme }) => theme.colors.transparentIron};
     margin:0;
     font-size: 30px;
     font-weight: 900;
+    
 `;
 
 export const List = styled.ul`

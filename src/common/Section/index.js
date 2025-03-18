@@ -2,11 +2,11 @@
 import { Header, List, ListItem, StyledSection } from "./styled";
 import blueDisc from "./listItemBlueDisc.svg";
 
-export const Section = ({ title, content }) => (
+export const Section = ({ title, icon, content }) => (
 
     <StyledSection>
         <Header>
-            {title}
+            {title}{icon}
         </Header>
         <List>
             {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import { fetchApiData } from "./fetchApiData"
-import { sourceApiData } from "./sourceApiData";
+import { fetchApiData } from "./Portfolio/fetchApiData"
+import { sourceApiData } from "./Portfolio/sourceApiData";
 
 export const useProjectsDownloads = () => {
     const [dataState, setDataState] = useState({ status: "loading", projectsData: [] })

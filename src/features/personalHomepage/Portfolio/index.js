@@ -1,8 +1,8 @@
 import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper } from "./styled";
 import { ReactComponent as GitHubIcon } from "./svg/github.svg";
 import { ReactComponent as DangerIcon } from "./svg/danger.svg";
-import { useProjectsDownloads } from "./useProjectDownloads";
-import { LinkContainer } from "../common/LinkContainer";
+import { useProjectsDownloads } from "../useProjectDownloads";
+import { LinkContainer } from "../../../common/LinkContainer";
 
 export const Portfolio = ({ gitHubLink }) => {
   const dataState = useProjectsDownloads();
