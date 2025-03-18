@@ -1,1 +1,0 @@
-export const skills = ["React", "React Hooks", "React Router", "Redux", "Redux Toolkit", "Redux-Saga", "Working witht API (fetch, axios)", "Promise, Async/Await", "Error Handling", "JavaScript: ES6+", "CSS BEM convention", "CSS Flexbox", "CSS Grid", "Immutability", "Responsive Web Design", "Git", "GitHub Pull Request & Review", "Teamwork"];
