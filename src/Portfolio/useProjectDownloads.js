@@ -17,7 +17,7 @@ export const useProjectsDownloads = () => {
                 }
             })();
         }, 3000)
-    }, []);
+    }, [dataState]);
 
     return dataState;
 };
