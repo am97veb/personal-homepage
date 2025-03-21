@@ -29,12 +29,13 @@ export const Caption = styled.p`
     font-size: 12px;
     font-weight: 700;
     line-height: 15.6px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.caption};
     text-transform: uppercase;
     letter-spacing: 0px;
 `;
 
-export const Title = styled.h1`
+export const StyledHeader = styled.h1`
+    color: ${({ theme }) => theme.colors.header};
     font-size: 38px;
     font-weight: 900;
     line-height: 45.99px;
@@ -45,6 +46,6 @@ export const Description = styled.p`
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.aboutMeContent};
     margin: 35px 0px 32px;
 `;
