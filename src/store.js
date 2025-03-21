@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import personalHomepageReducer from "./personalHomepageSlice";
+import themeReducer from "./themeSlice";
 
 export default configureStore({
     reducer: {
-        personalHomepage: personalHomepageReducer,
+        theme: themeReducer,
     },
 });
