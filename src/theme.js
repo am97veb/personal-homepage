@@ -5,7 +5,7 @@ export const lightTheme = {
         caption: "#6E7E91",
         header: "#252525",
         aboutMeContent: "#6E7E91",
-        borderBottom: "#D1D5DA4D",
+        border: "#D1D5DA4D",
         sectionBackground: "#FFFFFF",
         sectionShadowTop: "#090A3308",
         sectionShadowBottom: "#090A3305",
@@ -16,6 +16,7 @@ export const lightTheme = {
         projectDescription: "#6E7E91",
         link: "#0366D6",
         afterHovering: "#0366D6",
+        afterHoveringTransparent: "#0366D633",
     },
 }
 
@@ -26,7 +27,7 @@ export const darkTheme = {
         caption: "#FFFFFF",
         header: "#FFFFFF",
         aboutMeContent: "#FFFFFF",
-        borderBottom: "#D1D5DA4D",
+        border: "#D1D5DA4D",
         sectionBackground: "#363636B8",
         sectionShadowTop: "#090A3308",
         sectionShadowBottom: "#090A3305",
@@ -38,5 +39,6 @@ export const darkTheme = {
         link: "#2188FF",
         afterHovering: "#2188FF",
         icon: "#FFFFFF",
+        afterHoveringTransparent: "#0366D680",
     },
 }
