@@ -1,12 +1,14 @@
-import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper } from "./styled";
-import { ReactComponent as GitHubIcon } from "./svg/github.svg";
-import { ReactComponent as DangerIcon } from "./svg/danger.svg";
-import { useProjectsDownloads } from "../useProjectDownloads";
-import { LinkContainer } from "../../../common/LinkContainer";
+import { useSelector } from "react-redux";
+import { ReactComponent as GitHubIcon } from "./portfolioIcons/github.svg";
+import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, DangerIconDark, DangerIconLight, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper } from "./styled";
+import { useProjectsDownloads } from "./useProjectDownloads";
+import { LinkContainer } from "../LinkContainer";
+import { selectTheme } from "../../../themeSlice";
 
 export const Portfolio = ({ gitHubLink }) => {
   const dataState = useProjectsDownloads();
   const projects = dataState.projectsData;
+  const darkTheme = useSelector(selectTheme);
 
   return (
     <PortfolioSection>
@@ -33,7 +35,7 @@ export const Portfolio = ({ gitHubLink }) => {
           ?
           (
             <Wrapper>
-              <DangerIcon />
+              {darkTheme !== true ? <DangerIconDark /> : <DangerIconLight />}
               <ErrorHeader>
                 Ooops! Something went wrong...
               </ErrorHeader>

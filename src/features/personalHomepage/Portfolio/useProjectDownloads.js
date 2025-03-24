@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
-import { fetchApiData } from "./Portfolio/fetchApiData"
-import { sourceApiData } from "./Portfolio/sourceApiData";
+import { fetchApiData } from "./fetchApiData"
+import { sourceApiData } from "./sourceApiData";
 
 export const useProjectsDownloads = () => {
     const [dataState, setDataState] = useState({ status: "loading", projectsData: [] })
@@ -17,7 +17,7 @@ export const useProjectsDownloads = () => {
                 }
             })();
         }, 3000)
-    }, [dataState]);
+    }, []);
 
     return dataState;
 };

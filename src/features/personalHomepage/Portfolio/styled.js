@@ -1,5 +1,6 @@
-import styled, { keyframes } from "styled-components";
-import { ReactComponent as IconSpinner } from "./svg/icon-spinner.svg";
+import styled from "styled-components";
+import { ReactComponent as IconSpinner } from "./portfolioIcons/icon-spinner.svg";
+import { ReactComponent as DangerIcon } from "./portfolioIcons/danger.svg";
 
 export const PortfolioSection = styled.section`
     max-width: 1216px;
@@ -12,6 +13,7 @@ export const Header = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 32px;
+    color: ${({ theme }) => theme.colors.header};
 `;
 
 export const Title = styled.h2`
@@ -34,16 +36,17 @@ export const Projects = styled.div`
 `;
 
 export const Project = styled.div`
-    color: ${({ theme }) => theme.colors.slateGray};
-    border: 6px solid rgba(209, 213, 218, 0.3);
-    border-radius: 4px;
-    box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03),
-                0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     padding: 56px;
-    line-height: 140%;    
+    line-height: 140%; 
+    color: ${({ theme }) => theme.colors.projectDescription};
+    border: 6px solid ${({ theme }) => theme.colors.border};
+    border-radius: 4px;
+    box-shadow: 0px -2px 50px 0px ${({ theme }) => theme.colors.sectionShadowTop},
+                0px 16px 58px 0px ${({ theme }) => theme.colors.sectionShadowBottom};
 
     &:hover {
-        border: 6px solid rgba(3, 102, 214, 0.2)
+        transition: 0.5s;
+        border: 6px solid ${({ theme }) => theme.colors.afterHoveringTransparent};
     }
 `;
 
@@ -53,7 +56,7 @@ export const ProjectName = styled.h3`
     line-height: 100%;
     margin: 0px;
     text-transform: capitalize;
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.projectHeader};
 `;
 
 export const ProjectDescription = styled.p`
@@ -67,13 +70,27 @@ export const ProjectLinks = styled.div`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.link};
     text-decoration: none;
 `;
 
 export const Wrapper = styled.div`
     text-align: center;
     margin-top: 88px;
+`;
+
+export const DangerIconDark = styled(DangerIcon)`
+
+`;
+
+export const DangerIconLight = styled(DangerIcon)`
+   path {
+    stroke: ${({ theme }) => theme.colors.icon};
+   } 
+
+   [id="firstPath"] {
+    fill: ${({ theme }) => theme.colors.icon};
+   }
 `;
 
 export const ErrorHeader = styled.h3`
@@ -89,14 +106,15 @@ export const LoadingInformation = styled.p`
 export const LoadingIcon = styled(IconSpinner)`
     margin-top: 16px;
     animation-name: rotation;
-    animation-duration: 10s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
     
     @keyframes rotation {
         from {
             transform: rotate(0turn);
         }
         to {
-            transform: rotate(3turn);
+            transform: rotate(4turn);
         }
     }
  `;
