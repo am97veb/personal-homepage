@@ -33,7 +33,7 @@ export const Mail = styled.a`
     font-weight: 900;
     margin: 0 0 24px;
     text-decoration: none;
-    color: ${({ theme }) => theme.colors.caption};
+    color: inherit;
 
     &:hover {
         transition: 0.5s;
@@ -85,7 +85,7 @@ export const StyledGitHub = styled(GitHub)`
 `;
 
 export const StyledLinkedin = styled(Linkedin)`
-path {
+    path {
         fill: ${({ theme }) => theme.colors.icon}
     }
 
