@@ -1,6 +1,6 @@
 import { Container } from "./common/Container/index.js";
 import { Header } from "./features/personalHomepage/Header/index.js";
-import { Link } from "./common/Link/Index.js";
+import { Button } from "./common/Button/Index.js";
 import { mailTo } from "./mailTo.js";
 import { Section } from "./common/Section/index.js";
 import { skills } from "./features/personalHomepage/skills.js";
@@ -14,19 +14,19 @@ import nextToLearnIcon from "./features/personalHomepage/nextToLearnIcon.png";
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyle } from './GlobalStyle';
-import { selectTheme } from "./themeSlice.js";
+import { selectTheme } from "./homepageSlice.js";
 import { useSelector } from "react-redux";
 
 function App() {
   const darkMode = useSelector(selectTheme);
-  const theme = darkMode ? darkTheme : lightTheme;
+  const theme = darkMode === true ? darkTheme : lightTheme;
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Container>
         <Header
-          mail={<Link
+          mail={<Button
             icon={<Massage />}
             content="Hire Me"
             adress={mailTo}
@@ -35,25 +35,23 @@ function App() {
         />
         <Section
           title="My skills includes"
-          icon={<img src={skillsIcon} />}
+          icon={skillsIcon}
           content={skills}
         />
         <Section
           title="What I want to learn next"
-          icon={<img src={nextToLearnIcon} />}
+          icon={nextToLearnIcon}
           content={nextToLearn}
         />
         <Portfolio
-          gitHubLink={<Link
+          gitHubLink={<Button
             adress="https://github.com/am97veb"
+            rel="noreferrer noopener"
+            target="_blank"
             content="Go to GitHub"
           />}
         />
-        <Footer
-          mail={<Link
-            content="am97veb@gmail.com"
-            adress={mailTo} />}
-        />
+        <Footer />
       </Container>
     </ThemeProvider>
   );
