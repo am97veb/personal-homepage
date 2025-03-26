@@ -4,7 +4,7 @@ import { getThemeFromLocalStorage } from "./themeLocalStorage";
 const homepageSlice = createSlice({
     name: 'homepage',
     initialState: {
-        darkMode: getThemeFromLocalStorage(),
+        darkMode: getThemeFromLocalStorage() || false,
         projacts: [],
         downloads: "loading",
     },
