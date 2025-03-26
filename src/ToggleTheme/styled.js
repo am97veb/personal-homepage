@@ -14,6 +14,10 @@ export const Caption = styled.p`
     color: ${({ theme }) => theme.colors.caption};
     text-transform: uppercase;
     letter-spacing: 0px;
+
+    @media (max-width: 992px) {
+        font-size: 0px
+    }
 `;
 
 export const ThemeButton = styled.button`
