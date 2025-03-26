@@ -1,13 +1,11 @@
 import { useSelector } from "react-redux";
 import { ReactComponent as GitHubIcon } from "./portfolioIcons/github.svg";
-import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, DangerIconDark, DangerIconLight, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper } from "./styled";
-import { useProjectsDownloads } from "./useProjectDownloads";
-import { LinkContainer } from "../LinkContainer";
-import { selectTheme } from "../../../themeSlice";
+import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, DangerIconDark, DangerIconLight, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper, LinkText } from "./styled";
+import { selectDownloads, selectProjects, selectTheme } from "../../../homepageSlice";
 
 export const Portfolio = ({ gitHubLink }) => {
-  const dataState = useProjectsDownloads();
-  const projects = dataState.projectsData;
+  const downloads = useSelector(selectDownloads);
+  const projects = useSelector(selectProjects);
   const darkTheme = useSelector(selectTheme);
 
   return (
@@ -21,7 +19,7 @@ export const Portfolio = ({ gitHubLink }) => {
           My recent projects
         </LeadParagraph>
       </Header>
-      {dataState.status === "loading"
+      {downloads === "loading"
         ?
         (
           <Wrapper>
@@ -31,7 +29,7 @@ export const Portfolio = ({ gitHubLink }) => {
             <LoadingIcon />
           </ Wrapper>
         )
-        : dataState.status === "error"
+        : downloads === "error"
           ?
           (
             <Wrapper>
@@ -44,9 +42,7 @@ export const Portfolio = ({ gitHubLink }) => {
                 <br />
                 You can check them directly on Github.
               </LoadingInformation>
-              <LinkContainer>
-                {gitHubLink}
-              </LinkContainer>
+              {gitHubLink}
             </ Wrapper>
           )
           :
@@ -64,14 +60,22 @@ export const Portfolio = ({ gitHubLink }) => {
                     <span>
                       Demo:
                     </span>
-                    <Link href={project.homepage}>
-                      {project.homepage}
+                    <Link href={project.homepage}
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <LinkText>
+                        {project.homepage}
+                      </LinkText>
                     </Link>
                     <span>
                       Code:
                     </span>
-                    <Link href={project.html_url}>
-                      {project.html_url}
+                    <Link href={project.html_url}
+                      rel="noreferrer noopener"
+                      target="_blank">
+                      <LinkText>
+                        {project.html_url}
+                      </LinkText>
                     </Link>
                   </ProjectLinks>
                 </Project>
