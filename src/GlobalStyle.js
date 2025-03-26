@@ -16,6 +16,6 @@ body {
     color: ${({ theme }) => theme.colors.bodyText};
     font-family: "Inter";
     word-break: break-word;  
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
 }
 `;
