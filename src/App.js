@@ -6,7 +6,7 @@ import { Section } from "./common/Section/index.js";
 import { skills } from "./features/personalHomepage/skills.js";
 import { nextToLearn } from "./features/personalHomepage/nextToLearn.js";
 import { Portfolio } from "./features/personalHomepage/Portfolio/index.js";
-import { ToggleTheme } from "./ToggleTheme/index.js";
+import { ToggleTheme } from "./common/ToggleTheme/index.js";
 import { Footer } from "./features/personalHomepage/Footer/index.js";
 import { ReactComponent as Massage } from "./common/Message.svg";
 import skillsIcon from "./features/personalHomepage/skillsIcon.png";

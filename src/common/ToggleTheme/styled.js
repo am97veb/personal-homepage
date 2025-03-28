@@ -42,6 +42,7 @@ export const ToDarkMode = styled(ThemeChanger)`
     animation-name: themeButtonDisc, toRight;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    animation-iteration-count: 1;
 }
 
 @keyframes themeButtonDisc {
@@ -102,7 +103,7 @@ export const ToDarkMode = styled(ThemeChanger)`
     to {
         fill: #363636B8; 
     }
-};
+}
 `;
 
 export const ToLightMode = styled(ThemeChanger)`

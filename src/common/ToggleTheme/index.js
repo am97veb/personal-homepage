@@ -1,6 +1,6 @@
 import { Wrapper, Caption, ThemeButton, ToDarkMode, ToLightMode } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, toggleTheme } from "../homepageSlice";
+import { selectTheme, toggleTheme } from "../../homepageSlice";
 
 export const ToggleTheme = () => {
     const darkTheme = useSelector(selectTheme);
