@@ -1,7 +1,8 @@
- # Personal Homepage By Adrian Markefka
+ # <img width="50" height="50" src="adrianMarkefkaLogoGoldCircle2.PNG"></img> Personal Homepage By Adrian Markefka
 
  <img width="500" height="500" src="adrianMarkefkaLogoGoldCircle2.PNG"></img>
- 
+
+<img width="500" height="500" src="adrianMarkefkaLogo3.PNG"></img>
  ![przykładowy obrazek](adrianMarkefkaLogo3.PNG)
 
 ![przykładowy obrazek](adrianMarkefkaLogoGoldCircle2.PNG)
