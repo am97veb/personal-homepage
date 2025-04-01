@@ -7,7 +7,8 @@ export const PortfolioSection = styled.section`
     margin: 0px 20px 120px;
 
     @media (max-width: 768px) {
-        margin: 0px 16px 48px;    }
+        margin: 0px 16px 48px;   
+    }
 `;
 
 export const Header = styled.div`
@@ -17,6 +18,7 @@ export const Header = styled.div`
     align-items: center;
     margin-bottom: 32px;
     color: ${({ theme }) => theme.colors.header};
+    transition: color 0.5s;
 
     @media (max-width: 768px) {
         margin-bottom: 24px;
@@ -60,8 +62,9 @@ export const Project = styled.div`
     padding: 56px;
     line-height: 140%; 
     color: ${({ theme }) => theme.colors.projectDescription};
-    background-color: ${({ theme }) => theme.colors.sectionBackground};;
-    border: 6px solid ${({ theme }) => theme.colors.border};
+    background-color: ${({ theme }) => theme.colors.sectionBackground};
+    border: 6px solid ${({ theme }) => theme.colors.projectBorder};
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
     border-radius: 4px;
     box-shadow: 0px -2px 50px 0px ${({ theme }) => theme.colors.sectionShadowTop},
                 0px 16px 58px 0px ${({ theme }) => theme.colors.sectionShadowBottom};
@@ -71,7 +74,7 @@ export const Project = styled.div`
         border: 6px solid ${({ theme }) => theme.colors.afterHoveringTransparent};
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         padding: 24px;
     }
 `;
@@ -82,6 +85,7 @@ export const ProjectName = styled.h3`
     line-height: 100%;
     margin: 0px;
     text-transform: capitalize;
+    transition: color 0.5s;
     color: ${({ theme }) => theme.colors.projectHeader};
 
     @media (max-width: 768px) {
@@ -100,18 +104,19 @@ export const ProjectLinks = styled.div`
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.colors.link};
+    transition: color 0.5s;
+    color: ${({ theme }) => theme.colors.projectLink};
     text-decoration: none;
 `;
 
 export const LinkText = styled.p`
     display: inline;
     margin: 0px;
-    border-bottom: 2px solid ${({theme}) => theme.colors.linkTransparent};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.linkTransparent};
     padding-bottom: 2px;
 
     &:hover {
-        border-bottom: 2px solid ${({theme}) => theme.colors.linkAfterHovering};
+        border-bottom: 2px solid ${({ theme }) => theme.colors.linkAfterHovering};
     }
 `;
 
@@ -141,6 +146,7 @@ export const DangerIconLight = styled(DangerIcon)`
 export const ErrorHeader = styled.h3`
     font-size: 24px;
     margin-top: 16px;
+    color: ${({ theme }) => theme.colors.errorHeader};
 
     @media (max-width: 768px) {
         font-size: 18px;
@@ -150,6 +156,7 @@ export const ErrorHeader = styled.h3`
 export const LoadingInformation = styled.p`
     font-size: 20px;
     margin: 32px 0;
+    color: ${({ theme }) => theme.colors.loadingText};
 
     @media (max-width: 768px) {
         font-size: 14px;
