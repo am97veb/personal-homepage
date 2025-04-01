@@ -9,26 +9,26 @@ Further on, there are two sections - the first shows my acquired skills and the 
 Below, in the Portfolio section, you will find my projects, which are downloaded from an external Api. 
 At the bottom, you will find my e-mail address and links to GitHub and Linkedin.
 
-## 📄 Demo
-Feel free to visit my [Personal Homepage ](https://am97veb.github.io/personal-homepage/
-)🧐
-
 ## 🎬 Presentation
 
 ![Personal homepage presentation](./README.md%20files/personalHompagePresentation.gif)
 
-#### Downloading projects from GitHub
+### 🌐 Downloading projects from GitHub
 
 The projects are downloaded from GitHub.
 The loading screen contains information about the download and an animation.
 
 <img width="300" src="./README.md%20files/fetchPortfolioGif.gif"/>
 
-#### Error handling
+#### 🔧 Error handling
 
 An appropriate message and a link to GitHub have been provided in case of problems with the download of projects.
 
 <img width="300" src="./README.md%20files/errorHandlingGif.gif"/>
+
+## 📄 Demo
+Feel free to visit my [Personal Homepage ](https://am97veb.github.io/personal-homepage/
+)🧐
 
 
 ## ⚙ Technologies
@@ -37,12 +37,12 @@ This project was bootstrapped with Create React App and uses technologies implem
 - Redux,
 - Redux-Saga,
 - Redux Toolkit,
-- Axios,
-- Styled Components,
+- Axios, 
+- Styled Components, 
 - Grid,
 - Flexbox,
-- ThemeProvider,
-- Media Queries,
+- ThemeProvider, 
+- Media Queries, 
 - Normalize.css,
 - BEM convention.
 
