@@ -13,7 +13,7 @@ body {
     max-width: 1920px;
     margin: 0 auto;
     background-color: ${({ theme }) => theme.colors.bodyBackground};
-    color: ${({ theme }) => theme.colors.bodyText};
+    transition: background-color 0.5s;
     font-family: "Inter";
     word-break: break-word;  
     letter-spacing: 1px;
