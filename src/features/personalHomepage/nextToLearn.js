@@ -1,1 +1,7 @@
-export const nextToLearn = [ "TypeScript", "Vite.js" ]
+export const nextToLearn = [
+    "TypeScript",
+    "Node.js",
+    "Next.js",
+    "JS classes",
+    "Cypress",
+    "SQL"]
