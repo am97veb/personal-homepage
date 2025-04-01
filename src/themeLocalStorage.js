@@ -1,5 +1,7 @@
-const localStorageKay = "darkTheme";
+const localStorageKay = "darkMode";
 
-export const saveThemeInLocalStorage = (darkTheme) => localStorage.setItem(localStorageKay, JSON.stringify(darkTheme));
+export const saveThemeInLocalStorage = (darkMode) => 
+    localStorage.setItem(localStorageKay, JSON.stringify(darkMode));
 
-export const getThemeFromLocalStorage = () => JSON.parse(localStorage.getItem(localStorageKay));
+export const getThemeFromLocalStorage = () => 
+    JSON.parse(localStorage.getItem(localStorageKay));
