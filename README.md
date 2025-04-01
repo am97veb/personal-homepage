@@ -1,4 +1,4 @@
- # Personal Homepage By Adrian Markefka
+ # Personal Homepage
 
 The personal-homepage project is my digital business card - it showcase my skills, the projects created on github and the areas in which I plan further personal development.
 
