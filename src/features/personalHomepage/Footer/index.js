@@ -1,4 +1,4 @@
-import { mailTo } from "../../../mailTo";
+import { mailTo } from "../mailTo";
 import { Caption, ContactContainer, Description, Mail, StyledFacebook, StyledGitHub, StyledInstagram, StyledLinkedin, StyledX, Wrapper } from "./styled";
 
 export const Footer = () => {
@@ -20,7 +20,7 @@ export const Footer = () => {
         am97veb@gmail.com
       </Mail>
       <Description>
-        If you need help with your ideas for a website or app - go ahead, I'm always open to new projects and new challenges. Don't be shy, feel free to contact me!
+        If you need help with your ideas for a website or app - go ahead, I'm always open to new projects and new challenges. Don't be shy, feel free to contact me 📧
       </Description>
       <ContactContainer>
         {styledIcons.map((styledIcon) => (
