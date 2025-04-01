@@ -4,7 +4,6 @@ The personal-homepage project is my digital business card - it showcase my skill
 
 ## ✍ Description 
 
-
 At the top in the header is my photo, a short description and the button "Hire me" which is a link to the mail. 
 In the top right corner there is a button to switch between the dark and light theme. The selected theme is saved in localStorage.
 Further on, there are two sections - the first shows my acquired skills and the second shows the areas I would like to explore.
