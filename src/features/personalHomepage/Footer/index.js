@@ -1,14 +1,11 @@
 import { mailTo } from "../mailTo";
-import { Caption, ContactContainer, Description, Mail, StyledFacebook, StyledGitHub, StyledInstagram, StyledLinkedin, StyledX, Wrapper } from "./styled";
+import { Caption, ContactContainer, Description, Mail, StyledGitHub, StyledLinkedin, Wrapper } from "./styled";
 
 export const Footer = () => {
 
   const styledIcons = [
     { styledIcon: <StyledGitHub />, link: "https://github.com/am97veb" },
     { styledIcon: <StyledLinkedin />, link: "https://www.linkedin.com/in/am97veb" },
-    { styledIcon: <StyledFacebook />, link: "https://www.facebook.com/adrian.markefka.5" },
-    { styledIcon: <StyledInstagram />, link: "https://www.instagram.com/am97veb/" },
-    { styledIcon: <StyledX />, link: "https://x.com/AM97VEB" },
   ];
 
   return (

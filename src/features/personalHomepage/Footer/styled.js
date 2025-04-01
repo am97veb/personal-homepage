@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as GitHub } from "./socialMediaIcons/gitHub_black.svg";
-import { ReactComponent as Facebook } from "./socialMediaIcons/facebook_icons_black.svg";
-import { ReactComponent as Instagram } from "./socialMediaIcons/Instagram_icon_black.svg";
 import { ReactComponent as Linkedin } from "./socialMediaIcons/LinkedIN.svg";
-import { ReactComponent as X } from "./socialMediaIcons/xicon_black.svg";
 
 export const Wrapper = styled.div`
   margin: 0px 20px 119px;
@@ -93,58 +90,6 @@ export const StyledLinkedin = styled(Linkedin)`
     }
 
     &:hover path {
-        transition: 0.5s;
-        fill: ${({ theme }) => theme.colors.afterHovering};
-    }
-
-    @media (max-width: 768px) {
-        width: 32px;
-        height: 32px;
-    }
-`;
-
-export const StyledFacebook = styled(Facebook)`
-    path {
-        fill: ${({ theme }) => theme.colors.icon}
-    }
-
-    &:hover path {
-        transition: 0.5s;
-        fill: ${({ theme }) => theme.colors.afterHovering};
-    }
-
-    @media (max-width: 768px) {
-        width: 32px;
-        height: 32px;
-    }
-`;
-
-export const StyledInstagram = styled(Instagram)`
-    path {
-        fill: ${({ theme }) => theme.colors.icon}
-    }
-
-    &:hover path {
-        transition: 0.5s;
-        fill: ${({ theme }) => theme.colors.afterHovering};
-    }
-
-    @media (max-width: 768px) {
-        width: 32px;
-        height: 32px;
-    }
-`;
-
-export const StyledX = styled(X)`
-    [id="1"] {
-        fill: ${({ theme }) => theme.colors.icon}
-    }
-
-    [id="2"] {
-        fill: ${({ theme }) => theme.colors.bodyBackground}
-    } 
-
-    &:hover [id="1"] {
         transition: 0.5s;
         fill: ${({ theme }) => theme.colors.afterHovering};
     }
