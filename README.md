@@ -1,7 +1,9 @@
  # Personal Homepage By Adrian Markefka
 
-## ✍ Description 
 The personal-homepage project is my digital business card - it showcase my skills, the projects created on github and the areas in which I plan further personal development.
+
+## ✍ Description 
+
 
 At the top in the header is my photo, a short description and the button "Hire me" which is a link to the mail. 
 In the top right corner there is a button to switch between the dark and light theme. The selected theme is saved in localStorage.
