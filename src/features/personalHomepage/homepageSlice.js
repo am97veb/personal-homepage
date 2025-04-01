@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getThemeFromLocalStorage } from "./themeLocalStorage";
+import { getThemeFromLocalStorage } from "../../themeLocalStorage";
 
 const homepageSlice = createSlice({
     name: 'homepage',
@@ -12,7 +12,7 @@ const homepageSlice = createSlice({
         toggleTheme: (state) => {
             state.darkMode = !state.darkMode;
         },
-        fetchDataSuccess: (state, {payload:projectsData}) => {
+        fetchDataSuccess: (state, { payload: projectsData }) => {
             state.downloads = "success";
             state.projects = projectsData;
         },
