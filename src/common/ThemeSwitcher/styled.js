@@ -52,7 +52,7 @@ export const StyledButtonDisc = styled(ToggleButtonDisc)`
     color:  ${({ theme }) => theme.colors.switchDisc};
     transform: translateX(-10px);
 
-    ${({ darkTheme }) => darkTheme && css`
+    ${({ $darkTheme }) => $darkTheme && css`
     transform: translateX(10px);
     `}
 `;
@@ -67,7 +67,7 @@ export const StyledButtonSun = styled(ToggleButtonSun)`
         fill: inherit;
     }
 
-    ${({ darkTheme }) => darkTheme && css`
+    ${({ $darkTheme }) => $darkTheme && css`
     transform: translateX(10px);
     `}
 `;
