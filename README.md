@@ -6,30 +6,45 @@ The personal-homepage project is my digital business card - it showcase my skill
 At the top in the header is my photo, a short description and the button "Hire me" which is a link to the mail. 
 In the top right corner there is a button to switch between the dark and light theme. The selected theme is saved in localStorage.
 Further on, there are two sections - the first shows my acquired skills and the second shows the areas I would like to explore.
-Below, in the Portfolio section, you will find my projects, which are downloaded from an external Api. There is a loading screen for the download and an appropriate message in case of a problem with the download. 
-At the bottom, you will find my e-mail address and links to GitHub, Linkedin and other social networks.
+Below, in the Portfolio section, you will find my projects, which are downloaded from an external Api. 
+At the bottom, you will find my e-mail address and links to GitHub and Linkedin.
 
-<img width="520" height="420" src="adrianMarkefkaLogo3.PNG"></img>
+## 📄 Demo
+Feel free to visit my [Personal Homepage ](https://am97veb.github.io/personal-homepage/
+)🧐
 
 ## 🎬 Presentation
 
-## 📄 Demo
-https://am97veb.github.io/personal-homepage/
+![Personal homepage presentation](./README.md%20files/personalHompagePresentation.gif)
+
+#### Downloading projects from GitHub
+
+The projects are downloaded from GitHub.
+The loading screen contains information about the download and an animation.
+
+<img width="300" src="./README.md%20files/fetchPortfolioGif.gif"/>
+
+#### Error handling
+
+An appropriate message and a link to GitHub have been provided in case of problems with the download of projects.
+
+<img width="300" src="./README.md%20files/errorHandlingGif.gif"/>
+
 
 ## ⚙ Technologies
 This project was bootstrapped with Create React App and uses technologies implemented in Java Script ECMAScript 6. In addition, tools such as:
 
-Redux,
-Redux-Saga,
-Redux Toolkit,
-Axios,
-Styled Components,
-Grid,
-Flexbox,
-ThemeProvider,
-Media Queries,
-Normalize.css,
-BEM convention.
+- Redux,
+- Redux-Saga,
+- Redux Toolkit,
+- Axios,
+- Styled Components,
+- Grid,
+- Flexbox,
+- ThemeProvider,
+- Media Queries,
+- Normalize.css,
+- BEM convention.
 
 
 ## 📃 Getting Started with Create React App
