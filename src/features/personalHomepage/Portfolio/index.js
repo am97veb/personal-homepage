@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ReactComponent as GitHubIcon } from "./portfolioIcons/github.svg";
 import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, DangerIconDark, DangerIconLight, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper, LinkText } from "./styled";
-import { selectDownloads, selectProjects, selectTheme } from "../../../homepageSlice";
+import { selectDownloads, selectProjects, selectTheme } from "../homepageSlice";
 
 export const Portfolio = ({ gitHubLink }) => {
   const downloads = useSelector(selectDownloads);
