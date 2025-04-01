@@ -33,10 +33,11 @@ export const Mail = styled.a`
     font-weight: 900;
     margin: 0 0 24px;
     text-decoration: none;
-    color: inherit;
+    color: ${({ theme }) => theme.colors.mail};
+    transition: color 0.5s;
 
     &:hover {
-        transition: 0.5s;
+        transition: color 0.5s;
         color: ${({ theme }) => theme.colors.afterHovering}
     }
 
@@ -51,6 +52,8 @@ export const Description = styled.p`
     font-weight: 400;
     line-height: 140%;
     margin: 0 0 56px;
+    color: ${({ theme }) => theme.colors.footerContent};
+    transition: color 0.5s;
 
     @media (max-width: 768px) {
         font-size: 14px;
