@@ -5,7 +5,7 @@ export const skills = [
     "Redux",
     "Redux Toolkit",
     "Redux-Saga",
-    "Working witht API (fetch, axios)",
+    "Working with API (fetch, axios)",
     "Promise, Async/Await",
     "Error Handling",
     "JavaScript: ES6+",
