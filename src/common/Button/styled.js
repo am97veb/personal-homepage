@@ -5,10 +5,11 @@ export const StyledButton = styled.a`
     align-items: center;
     gap: 16px;
     text-decoration: none;
-    background-color: ${({ theme }) => theme.colors.linkContainer};
     color: ${({ theme }) => theme.colors.buttonContent}; 
+    background-color: ${({ theme }) => theme.colors.buttonBackground};
+    border: 1px solid ${({ theme }) => theme.colors.buttonBorder}; 
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
     padding: 12px 16px;
-    border: 1px solid rgba(209, 213, 218, 0.3);
     border-radius: 4px;
     
     &:hover {
