@@ -1,11 +1,10 @@
 import { Wrapper, ImageContainer, Image, AboutMe, Caption, StyledHeader, Description } from "./styled";
 import adrianMarkefka from "./AdrianMarkefka.jpg"
+import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 
 export const Header = ({ mail, toggleTheme }) => (
     <Wrapper>
-        <ImageContainer>
-            <Image src={adrianMarkefka} alt="photo by Adrian" />
-        </ImageContainer>
+        <Image src={adrianMarkefka} alt="photo by Adrian" />
         <AboutMe>
             <Caption>
                 this is
@@ -14,11 +13,11 @@ export const Header = ({ mail, toggleTheme }) => (
                 Adrian Markefka
             </StyledHeader>
             <Description>
-                💻😀 I'm Frontend Developer and I'm looking for a job. I thought what I wanted to do in life for a long time. My search led me to the IT industry and I finally felt what I want to do - work as a Frontend Developer. You can see what I have already learned below, what I would like to learn in the near future and my finished projects. Feel free to contact me 📧
+                💻 I am a young Frontend Developer who constantly strives to explore and master new technologies. I am thorough and meticulous. Writing simple and maintainable code is my priority. I am not afraid of challenging, creative projects and enjoy taking on new challenges.
             </Description>
-                {mail}
+            {mail}
         </AboutMe>
-        {toggleTheme}
+        <ThemeSwitcher />
     </Wrapper>
 
 );
