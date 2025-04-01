@@ -1,8 +1,9 @@
 import { takeEvery, select, call, put, delay } from "redux-saga/effects";
-import { fetchApiData } from "./features/personalHomepage/Portfolio/fetchApiData";
-import { saveThemeInLocalStorage } from "./themeLocalStorage";
+import { fetchApiData } from "./Portfolio/fetchApiData";
+import { sourceApiData } from "./Portfolio/sourceApiData";
+import { saveThemeInLocalStorage } from "../../themeLocalStorage";
 import { toggleTheme, selectTheme, fetchDataSuccess, fetchDataError } from "./homepageSlice";
-import { sourceApiData } from "./features/personalHomepage/Portfolio/sourceApiData";
+
 
 function* saveThemeInLocalStorageHandler() {
     const darkTheme = yield select(selectTheme);
