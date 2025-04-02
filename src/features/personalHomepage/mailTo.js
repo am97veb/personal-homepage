@@ -1,1 +1,0 @@
-export const mailTo = "mailto:am97veb@gmail.com";
