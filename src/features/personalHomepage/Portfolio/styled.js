@@ -58,19 +58,18 @@ export const Projects = styled.div`
     }
 `;
 
-export const Project = styled.div`
+export const StyledProject = styled.div`
     padding: 56px;
     line-height: 140%; 
     color: ${({ theme }) => theme.colors.projectDescription};
     background-color: ${({ theme }) => theme.colors.sectionBackground};
     border: 6px solid ${({ theme }) => theme.colors.projectBorder};
-    transition: color 0.5s, background-color 0.5s, border 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s;
     border-radius: 4px;
     box-shadow: 0px -2px 50px 0px ${({ theme }) => theme.colors.sectionShadowTop},
                 0px 16px 58px 0px ${({ theme }) => theme.colors.sectionShadowBottom};
 
     &:hover {
-        transition: 0.5s;
         border: 6px solid ${({ theme }) => theme.colors.afterHoveringTransparent};
     }
 
@@ -113,6 +112,7 @@ export const LinkText = styled.p`
     display: inline;
     margin: 0px;
     border-bottom: 2px solid ${({ theme }) => theme.colors.linkTransparent};
+    transition: border-bottom 0.5s;
     padding-bottom: 2px;
 
     &:hover {
@@ -153,7 +153,7 @@ export const ErrorHeader = styled.h3`
     }
 `;
 
-export const LoadingInformation = styled.p`
+export const LoadingState = styled.p`
     font-size: 20px;
     margin: 32px 0;
     color: ${({ theme }) => theme.colors.loadingText};
