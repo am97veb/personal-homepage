@@ -1,12 +1,14 @@
 import { useSelector } from "react-redux";
 import { ReactComponent as GitHubIcon } from "./portfolioIcons/github.svg";
-import { PortfolioSection, Header, LeadParagraph, Title, Project, ProjectName, ProjectDescription, Projects, Link, ProjectLinks, DangerIconDark, DangerIconLight, ErrorHeader, LoadingInformation, LoadingIcon, Wrapper, LinkText } from "./styled";
-import { selectDownloads, selectProjects, selectTheme } from "../homepageSlice";
+import { selectDownloads, selectProjects } from "../homepageSlice";
+import { Loading } from "./Loading";
+import { Error } from "./Error";
+import { Project } from "./Project";
+import { PortfolioSection, Header, LeadParagraph, Title, Projects } from "./styled";
 
-export const Portfolio = ({ gitHubLink }) => {
+export const Portfolio = () => {
   const downloads = useSelector(selectDownloads);
   const projects = useSelector(selectProjects);
-  const darkTheme = useSelector(selectTheme);
 
   return (
     <PortfolioSection>
@@ -21,69 +23,20 @@ export const Portfolio = ({ gitHubLink }) => {
       </Header>
       {downloads === "loading"
         ?
-        (
-          <Wrapper>
-            <LoadingInformation>
-              Please wait, projects are being loaded...
-            </LoadingInformation>
-            <LoadingIcon />
-          </ Wrapper>
-        )
-        : downloads === "error"
+        <Loading />
+        :
+        downloads === "error"
           ?
-          (
-            <Wrapper>
-              {darkTheme !== true ? <DangerIconDark /> : <DangerIconLight />}
-              <ErrorHeader>
-                Ooops! Something went wrong...
-              </ErrorHeader>
-              <LoadingInformation>
-                Sorry, failed to load Github projects.
-                <br />
-                You can check them directly on Github.
-              </LoadingInformation>
-              {gitHubLink}
-            </ Wrapper>
-          )
+          <Error />
           :
-          (
-            <Projects>
-              {projects.map(project =>
-                <Project>
-                  <ProjectName>
-                    {project.name.replaceAll("-", " ")}
-                  </ProjectName>
-                  <ProjectDescription>
-                    {project.description}
-                  </ProjectDescription>
-                  <ProjectLinks>
-                    <span>
-                      Demo:
-                    </span>
-                    <Link href={project.homepage}
-                      rel="noreferrer noopener"
-                      target="_blank">
-                      <LinkText>
-                        {project.homepage}
-                      </LinkText>
-                    </Link>
-                    <span>
-                      Code:
-                    </span>
-                    <Link href={project.html_url}
-                      rel="noreferrer noopener"
-                      target="_blank">
-                      <LinkText>
-                        {project.html_url}
-                      </LinkText>
-                    </Link>
-                  </ProjectLinks>
-                </Project>
-              )}
-            </Projects>
-          )
+          <Projects>
+            {projects.map(project =>
+              <Project
+                project={project}
+              />
+            )}
+          </Projects>
       }
-
     </PortfolioSection>
   )
 };
