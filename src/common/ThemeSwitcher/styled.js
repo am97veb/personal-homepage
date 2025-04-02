@@ -21,7 +21,7 @@ export const Caption = styled.p`
     text-transform: uppercase;
     letter-spacing: 0px;
 
-    @media (max-width: 992px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.large}px) {
         font-size: 0px
     }
 `;

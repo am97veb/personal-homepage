@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     gap: 66px;
     margin: 113px 20px 73px;
     
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         margin: 34px 16px 48px;
         flex-wrap: wrap;
         gap: 0px;
@@ -23,7 +23,7 @@ export const Image = styled.img`
     object-fit: cover;
     
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         width: 35vw;
         height: 35vw;
     }
@@ -32,7 +32,7 @@ export const Image = styled.img`
 export const AboutMe = styled.div`
     align-self: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         order: 3
         }
 `;
@@ -46,7 +46,7 @@ export const Caption = styled.p`
     text-transform: uppercase;
     letter-spacing: 0px;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         margin: 16px 0px 8px;
     }
 `;
@@ -58,7 +58,7 @@ export const StyledHeader = styled.h1`
     font-weight: 900;
     margin: 0px;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         font-size: 22px;
     }
 `;
@@ -71,11 +71,11 @@ export const Description = styled.p`
     transition: color 0.5s;
     margin: 35px 0px 32px;
 
-    @media (max-width: 992px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.large}px) {
         font-size: 17px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         margin: 16px 0px 24px;
     }
 `;

@@ -6,7 +6,7 @@ export const PortfolioSection = styled.section`
     max-width: 1216px;
     margin: 0px 20px 120px;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         margin: 0px 16px 48px;   
     }
 `;
@@ -20,7 +20,7 @@ export const Header = styled.div`
     color: ${({ theme }) => theme.colors.header};
     transition: color 0.5s;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         margin-bottom: 24px;
     }
 `;
@@ -30,7 +30,7 @@ export const Title = styled.h2`
     font-size: 30px;
     font-weight: 900;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         font-size: 18px;
         margin: 12px 0 16px;
     }
@@ -42,7 +42,7 @@ export const LeadParagraph = styled.p`
     line-height: 140%;
     margin: 0;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         font-size: 17px;
     }
 `;
@@ -52,7 +52,7 @@ export const Projects = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 32px;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         grid-template-columns: 1fr;
         gap: 16px;
     }
@@ -74,7 +74,7 @@ export const Project = styled.div`
         border: 6px solid ${({ theme }) => theme.colors.afterHoveringTransparent};
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.large}px) {
         padding: 24px;
     }
 `;
@@ -88,7 +88,7 @@ export const ProjectName = styled.h3`
     transition: color 0.5s;
     color: ${({ theme }) => theme.colors.projectHeader};
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         font-size: 16px;
     }
 `;
@@ -124,7 +124,7 @@ export const Wrapper = styled.div`
     text-align: center;
     margin-top: 88px;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         margin-top: 48px;
     }
 `;
@@ -148,7 +148,7 @@ export const ErrorHeader = styled.h3`
     margin-top: 16px;
     color: ${({ theme }) => theme.colors.errorHeader};
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         font-size: 18px;
     }
 `;
@@ -158,7 +158,7 @@ export const LoadingInformation = styled.p`
     margin: 32px 0;
     color: ${({ theme }) => theme.colors.loadingText};
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         font-size: 14px;
         margin: 16px;
     }
@@ -179,7 +179,7 @@ export const LoadingIcon = styled(IconSpinner)`
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         width: 98px;
         height: 98px;
     }
