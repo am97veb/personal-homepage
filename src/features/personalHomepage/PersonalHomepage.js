@@ -5,10 +5,10 @@ import { skills } from "./skills.js";
 import { nextToLearn } from "./nextToLearn.js";
 import { Portfolio } from "./Portfolio/index.js";
 import { Footer } from "./Footer/index.js";
-import { ReactComponent as Massage } from "./Message.svg";
-import toolsIcon from "./toolsIcon.png";
-import rocketIcon from "./rocketIcon.png";
-import { mailTo } from "./mailTo.js";
+import { ReactComponent as Massage } from "./icons/Message.svg";
+import toolsIcon from "./icons/toolsIcon.png";
+import rocketIcon from "./icons/rocketIcon.png";
+import { mailTo } from "./links.js";
 
 export const PersonalHomepage = () => (
   <>
@@ -29,14 +29,7 @@ export const PersonalHomepage = () => (
       icon={rocketIcon}
       content={nextToLearn}
     />
-    <Portfolio
-      gitHubLink={<Button
-        adress="https://github.com/am97veb"
-        rel="noreferrer noopener"
-        target="_blank"
-        content="Go to GitHub"
-      />}
-    />
+    <Portfolio />
     <Footer />
   </>
 );
