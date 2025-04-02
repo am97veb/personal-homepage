@@ -22,7 +22,6 @@ export const Image = styled.img`
     border-radius: 50%;
     object-fit: cover;
     
-
     @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         width: 35vw;
         height: 35vw;
