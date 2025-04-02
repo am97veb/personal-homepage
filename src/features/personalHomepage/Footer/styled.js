@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   margin: 0px 20px 119px;
   max-width: 691px;
 
-  @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         margin: 0px 16px 31px;
     }
 `;
@@ -19,7 +19,7 @@ export const Caption = styled.p`
     letter-spacing: 0px;
     margin: 0 0 24px;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         margin: 0 0 12px;
     }
 `;
@@ -37,7 +37,7 @@ export const Mail = styled.a`
         color: ${({ theme }) => theme.colors.afterHovering}
     }
 
-    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         font-size: 18px;
         margin: 0 0 12px;
     }
@@ -51,7 +51,7 @@ export const Description = styled.p`
     color: ${({ theme }) => theme.colors.footerContent};
     transition: color 0.5s;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         font-size: 14px;
         margin: 0 0 40px;
         line-height: 100%;
@@ -62,21 +62,22 @@ export const ContactContainer = styled.div`
     display: flex;
     gap: 24px;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
        gap: 16px;
     }
 `;
 
 export const StyledGitHub = styled(GitHub)`
     path {
-        fill: ${({ theme }) => theme.colors.icon}
+        transition: fill 0.5s;
+        fill: ${({ theme }) => theme.colors.icon};
     }
 
     &:hover path {
         fill: ${({ theme }) => theme.colors.afterHovering};
     }
 
-    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         width: 32px;
         height: 32px;
     }
@@ -84,6 +85,7 @@ export const StyledGitHub = styled(GitHub)`
 
 export const StyledLinkedin = styled(Linkedin)`
     path {
+        transition: fill 0.5s;
         fill: ${({ theme }) => theme.colors.icon}
     }
 
@@ -91,7 +93,7 @@ export const StyledLinkedin = styled(Linkedin)`
         fill: ${({ theme }) => theme.colors.afterHovering};
     }
 
-    @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         width: 32px;
         height: 32px;
     }
