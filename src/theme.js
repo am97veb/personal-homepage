@@ -28,6 +28,10 @@ export const lightTheme = {
         mail: "#252525",
         footerContent: "#252525",
     },
+    breakpoints: {
+        medium: 768,
+        large: 992,
+    },
 };
 
 export const darkTheme = {
@@ -60,5 +64,9 @@ export const darkTheme = {
         mail: "#FFFFFF",
         footerContent: "#FFFFFF",
         icon: "#FFFFFF",
+    },
+    breakpoints: {
+        medium: 768,
+        large: 992,
     },
 };
