@@ -1,0 +1,1 @@
+export const footerDescription = "If you need help with your ideas for a website or app - go ahead, I'm always open to new projects and new challenges. Don't be shy, feel free to contact me 📧"

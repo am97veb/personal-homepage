@@ -1,11 +1,12 @@
-import { mailTo } from "../mailTo";
+import { gitHub, linkedin, mailTo } from "../links";
+import { footerDescription } from "./footerDescription";
 import { Caption, ContactContainer, Description, Mail, StyledGitHub, StyledLinkedin, Wrapper } from "./styled";
 
 export const Footer = () => {
 
   const styledIcons = [
-    { styledIcon: <StyledGitHub />, link: "https://github.com/am97veb" },
-    { styledIcon: <StyledLinkedin />, link: "https://www.linkedin.com/in/am97veb" },
+    { styledIcon: <StyledGitHub />, link: {gitHub} },
+    { styledIcon: <StyledLinkedin />, link: {linkedin} },
   ];
 
   return (
@@ -17,7 +18,7 @@ export const Footer = () => {
         am97veb@gmail.com
       </Mail>
       <Description>
-        If you need help with your ideas for a website or app - go ahead, I'm always open to new projects and new challenges. Don't be shy, feel free to contact me 📧
+        {footerDescription}
       </Description>
       <ContactContainer>
         {styledIcons.map((styledIcon) => (
