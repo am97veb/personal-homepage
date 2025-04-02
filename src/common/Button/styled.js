@@ -13,7 +13,6 @@ export const StyledButton = styled.a`
     border-radius: 4px;
     
     &:hover {
-        transition: 0.5s;
         box-shadow: -2px -2px 0px 0px rgba(140, 194, 255, 1),
                     2px 2px 0px 0px rgba(140, 194, 255, 1),
                     -2px 2px 0px 0px rgba(140, 194, 255, 1),

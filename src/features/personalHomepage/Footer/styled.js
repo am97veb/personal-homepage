@@ -34,7 +34,6 @@ export const Mail = styled.a`
     transition: color 0.5s;
 
     &:hover {
-        transition: color 0.5s;
         color: ${({ theme }) => theme.colors.afterHovering}
     }
 
@@ -74,7 +73,6 @@ export const StyledGitHub = styled(GitHub)`
     }
 
     &:hover path {
-        transition: 0.5s;
         fill: ${({ theme }) => theme.colors.afterHovering};
     }
 
@@ -90,7 +88,6 @@ export const StyledLinkedin = styled(Linkedin)`
     }
 
     &:hover path {
-        transition: 0.5s;
         fill: ${({ theme }) => theme.colors.afterHovering};
     }
 
