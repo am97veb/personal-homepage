@@ -8,7 +8,7 @@ export const StyledButton = styled.a`
     color: ${({ theme }) => theme.colors.buttonContent}; 
     background-color: ${({ theme }) => theme.colors.buttonBackground};
     border: 1px solid ${({ theme }) => theme.colors.buttonBorder}; 
-    transition: color 0.5s, background-color 0.5s, border 0.5s;
+    transition: color 0.5s, background-color 0.5s, border 0.5s, box-shadow 0.5s;
     padding: 12px 16px;
     border-radius: 4px;
     
