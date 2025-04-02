@@ -15,14 +15,16 @@ import { ReactComponent as Massage } from "./features/personalHomepage/Message.s
 import toolsIcon from "./features/personalHomepage/toolsIcon.png";
 import rocketIcon from "./features/personalHomepage/rocketIcon.png";
 import { mailTo } from "./features/personalHomepage/mailTo.js";
+import { useDisabledTransition } from "./useDisabledTransition.js";
 
 function App() {
   const darkMode = useSelector(selectTheme);
+  const disabledTransition = useDisabledTransition();
   const theme = darkMode === true ? darkTheme : lightTheme;
 
   return (
     <ThemeProvider theme={theme}>
-      <GlobalStyle />
+      <GlobalStyle disabledTransition={disabledTransition} />
       <Container>
         <Header
           mail={<Button
