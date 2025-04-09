@@ -5,8 +5,8 @@ import { Address, Caption, ContactContainer, Description, Mail, StyledGitHub, St
 export const Footer = () => {
 
   const styledIcons = [
-    { styledIcon: <StyledGitHub />, link: { gitHub } },
-    { styledIcon: <StyledLinkedin />, link: { linkedin } },
+    { styledIcon: <StyledGitHub />, link: gitHub  },
+    { styledIcon: <StyledLinkedin />, link: linkedin  },
   ];
 
   return (
