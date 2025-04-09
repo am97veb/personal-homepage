@@ -1,4 +1,12 @@
+const common = {
+    breakpoints: {
+        medium: 768,
+        large: 992,
+    },
+};
+
 export const lightTheme = {
+    ...common,
     colors: {
         bodyBackground: "#FBFBFE",
         caption: "#6E7E91",
@@ -28,13 +36,10 @@ export const lightTheme = {
         mail: "#252525",
         footerContent: "#252525",
     },
-    breakpoints: {
-        medium: 768,
-        large: 992,
-    },
 };
 
 export const darkTheme = {
+    ...common,
     colors: {
         bodyBackground: "#252525",
         caption: "#FFFFFF",
@@ -64,9 +69,5 @@ export const darkTheme = {
         mail: "#FFFFFF",
         footerContent: "#FFFFFF",
         icon: "#FFFFFF",
-    },
-    breakpoints: {
-        medium: 768,
-        large: 992,
     },
 };
