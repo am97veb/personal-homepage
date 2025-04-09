@@ -1,5 +1,5 @@
 import { Wrapper, Image, AboutMe, Caption, StyledHeader, Description } from "./styled";
-import adrianMarkefka from "./AdrianMarkefka.jpg";
+import adrianMarkefka from "./adrianMarkefka.jpg";
 import { headerDescription } from "./headerDescription";
 import { ThemeSwitcher } from "../../../common/ThemeSwitcher";
 
