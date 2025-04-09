@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { ThemeProvider } from 'styled-components';
+import { Normalize } from "styled-normalize";
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyle } from './GlobalStyle';
 import { selectTheme } from "./features/personalHomepage/homepageSlice.js";
@@ -14,9 +15,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <Normalize />
       <GlobalStyle disabledTransition={disabledTransition} />
       <Container>
-       <PersonalHomepage />
+        <PersonalHomepage />
       </Container>
     </ThemeProvider>
   );
