@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as GitHub } from "./socialMediaIcons/gitHub_black.svg";
 import { ReactComponent as Linkedin } from "./socialMediaIcons/LinkedIN.svg";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.footer`
   margin: 0px 20px 119px;
   max-width: 691px;
 
@@ -22,6 +22,10 @@ export const Caption = styled.p`
     @media (max-width: ${({ theme }) => theme.breakpoints.medium}px) {
         margin: 0 0 12px;
     }
+`;
+
+export const Address = styled.address`
+    font-style: unset;
 `;
 
 export const Mail = styled.a`
