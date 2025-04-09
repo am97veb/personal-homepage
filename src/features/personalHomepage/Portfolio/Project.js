@@ -1,4 +1,4 @@
-import { StyledProject, ProjectName, ProjectDescription, Link, ProjectLinks, LinkText } from "./styled";
+import { StyledProject, ProjectName, ProjectDescription, Link, ProjectLinks, LinkText, ProjectValue, ProjectRow } from "./styled";
 
 export const Project = ({ project }) => (
     <StyledProject>
@@ -9,26 +9,26 @@ export const Project = ({ project }) => (
             {project.description}
         </ProjectDescription>
         <ProjectLinks>
-            <span>
+            <dt>
                 Demo:
-            </span>
-            <Link href={project.homepage}
-                rel="noreferrer noopener"
-                target="_blank">
-                <LinkText>
+            </dt>
+            <ProjectValue>
+                <Link href={project.homepage}
+                    rel="noreferrer noopener"
+                    target="_blank">
                     {project.homepage}
-                </LinkText>
-            </Link>
-            <span>
+                </Link>
+            </ProjectValue>
+            <dt>
                 Code:
-            </span>
-            <Link href={project.html_url}
-                rel="noreferrer noopener"
-                target="_blank">
-                <LinkText>
+            </dt>
+            <ProjectValue>
+                <Link href={project.html_url}
+                    rel="noreferrer noopener"
+                    target="_blank">
                     {project.html_url}
-                </LinkText>
-            </Link>
+                </Link>
+            </ProjectValue>
         </ProjectLinks>
     </StyledProject>
 );

@@ -47,10 +47,12 @@ export const LeadParagraph = styled.p`
     }
 `;
 
-export const Projects = styled.div`
+export const Projects = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+    list-style: none;
+    padding: 0px;
 
     @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         grid-template-columns: 1fr;
@@ -58,7 +60,7 @@ export const Projects = styled.div`
     }
 `;
 
-export const StyledProject = styled.div`
+export const StyledProject = styled.li`
     padding: 56px;
     line-height: 140%; 
     color: ${({ theme }) => theme.colors.projectDescription};
@@ -96,21 +98,22 @@ export const ProjectDescription = styled.p`
    margin: 24px 0;
 `;
 
-export const ProjectLinks = styled.div`
+export const ProjectLinks = styled.dl`
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 8px;
+    margin-bottom: 0px;
+`;
+
+export const ProjectValue = styled.dd`
+    margin: 0px;
 `;
 
 export const Link = styled.a`
     transition: color 0.5s;
     color: ${({ theme }) => theme.colors.projectLink};
     text-decoration: none;
-`;
-
-export const LinkText = styled.p`
     display: inline;
-    margin: 0px;
     border-bottom: 2px solid ${({ theme }) => theme.colors.linkTransparent};
     transition: border-bottom 0.5s;
     padding-bottom: 2px;
