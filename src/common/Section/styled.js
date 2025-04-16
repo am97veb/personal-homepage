@@ -58,6 +58,10 @@ export const ListItem = styled.li`
     @media (max-width: ${({theme}) => theme.breakpoints.medium}px) {
         gap: 8px;
     }
+
+    &:first-child {
+        margin-top: 0px;
+    }
 `;
 
 export const TopicLogo = styled.img`
