@@ -16,5 +16,8 @@ export const skills = [
     "Semantic & accessible HTML",
     "Responsive Web Design",
     "Git",
-    "NPM"
+    "NPM",
+    "Teamwork",
+    "GitHub Pull Requests & Review",
+    "Trello"
 ];
