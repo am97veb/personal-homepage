@@ -1,1 +1,1 @@
-export const sourceApiData = "https://api.github.com/users/am97veb/repos?sort=created&per_page=4";
+export const sourceApiData = "https://api.github.com/users/am97veb/repos?sort=created&per_page=6";
