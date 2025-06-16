@@ -1,4 +1,4 @@
-export const mailTo = "mailto:am97veb@gmail.com";
+export const mailTo = "mailto:adrian.markefka@gmail.com";
 
 export const gitHub = "https://github.com/am97veb";
 
