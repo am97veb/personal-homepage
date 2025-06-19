@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.0284f59f.js",
+    "main.js": "/personal-homepage/static/js/main.ad69e481.js",
     "static/js/453.61d4ab14.chunk.js": "/personal-homepage/static/js/453.61d4ab14.chunk.js",
     "static/media/adrianMarkefka.jpg": "/personal-homepage/static/media/adrianMarkefka.a0566a1d8a032fa2adc8.jpg",
     "static/media/gitHub_black.svg": "/personal-homepage/static/media/gitHub_black.36095fc123e1387104b143a9f74a8854.svg",
@@ -13,10 +13,10 @@
     "static/media/icon-spinner.svg": "/personal-homepage/static/media/icon-spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
     "static/media/toggleButtonDisc.svg": "/personal-homepage/static/media/toggleButtonDisc.c1dd93406ed3e6e0995fdd339a8fcde1.svg",
     "static/media/listItemBlueDisc.svg": "/personal-homepage/static/media/listItemBlueDisc.c28602c8be31d96b4a27bc3627dd6f6f.svg",
-    "main.0284f59f.js.map": "/personal-homepage/static/js/main.0284f59f.js.map",
+    "main.ad69e481.js.map": "/personal-homepage/static/js/main.ad69e481.js.map",
     "453.61d4ab14.chunk.js.map": "/personal-homepage/static/js/453.61d4ab14.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.0284f59f.js"
+    "static/js/main.ad69e481.js"
   ]
 }
