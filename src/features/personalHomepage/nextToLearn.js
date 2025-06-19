@@ -1,7 +1,7 @@
 export const nextToLearn = [
-    "TypeScript",
-    "Node.js",
     "Next.js",
-    "JS classes",
+    "Tailwind",
     "Cypress",
+    "Node.js",
+    "JS classes",
     "SQL"]
