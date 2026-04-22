@@ -5,8 +5,8 @@ import { Address, Caption, ContactContainer, Description, Mail, StyledGitHub, St
 export const Footer = () => {
 
   const styledIcons = [
-    { styledIcon: <StyledGitHub />, link: gitHub  },
-    { styledIcon: <StyledLinkedin />, link: linkedin  },
+    { styledIcon: <StyledGitHub />, link: gitHub },
+    { styledIcon: <StyledLinkedin />, link: linkedin },
   ];
 
   return (
@@ -16,7 +16,7 @@ export const Footer = () => {
       </Caption>
       <Address>
         <Mail href={mailTo}>
-          am97veb@gmail.com
+          adrian.markefka@gmail.com
         </Mail>
         <Description>
           {footerDescription}
