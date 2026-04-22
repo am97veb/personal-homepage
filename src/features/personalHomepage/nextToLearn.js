@@ -1,7 +1,8 @@
 export const nextToLearn = [
     "Next.js",
     "Tailwind",
+    "GraphQL",
     "Cypress",
-    "Node.js",
-    "JS classes",
-    "SQL"]
+    "React Native",
+    "AWS",
+]
