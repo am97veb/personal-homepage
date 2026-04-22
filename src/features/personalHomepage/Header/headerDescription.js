@@ -1,1 +1,1 @@
-export const headerDescription = "💻 I am a young Frontend Developer who constantly strives to explore and master new technologies. I'm thorough and meticulous. Writing simple and maintainable code is my priority. I'm not afraid of challenging, creative projects and enjoy taking on new challenges."
+export const headerDescription = "💻 I am looking for new challenges as a Full-Stack Developer, as I am interested in building applications on both the front-end and back-end."
